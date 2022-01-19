@@ -1,0 +1,21 @@
+<h1>Home Page</h1><br>
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<h2>Favorites</h2>
+<dl *ngFor="let note of favoriteNotes">
+    <dt>{{note.title}}</dt>
+    <dd>{{note.body}}</dd>
+</dl>
+<h2>Recents</h2>
+<dl *ngFor="let note of recentNotes">
+    <dt>{{note.title}}</dt>
+    <dd>{{note.body}}</dd>
+</dl>
+
+<!--
+    <h2>Notes List</h2>
+<ul *ngFor="let note of notes">
+    <li>{{note.title}}</li>
+</ul>
+-->
+
+
